@@ -32,7 +32,13 @@ samples, guidance on mobile development, and a full API reference.
 [device] second column of the output from `flutter devices`
 
 ## Run Test
-### Unit Test
+### Unit Test / Widget Test
 `flutter test [test_file]`
 
 eg: `flutter test test/counter_test.dart`
+
+### Integration Test
+
+`flutter drive --target=test_driver/[test_file]`
+
+eg: `flutter drive --target=test_driver/app.dart`
