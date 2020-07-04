@@ -1,21 +1,46 @@
 # flutter_web_test_1
 
-A new Flutter project.
+Template project to start a new flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Test Run
+1. `flutter doctor`
+2. Run project again devices that you want to support like iOS, Android, and Chrome.
 
-A few resources to get you started if this is your first Flutter project:
+### Testing Dependencies
+Copy from `pubspec.yaml` to your
+```
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  test: any
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Running Test
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Unit Test
+
+Copy lib/counter.dart and test/counter_test.dart
+Run `flutter test test/counter_test.dart`
+
+#### UI Test
+
+Copy test/widget_test.dart
+Run `flutter test test/widget_test.dart`
+
+#### Driver Test
+
+Copy folder test_driver and lib/main.dart
+Run `flutter drive --target=test_driver/app.dart`
+
+
+*Now your development is ready.*
 
 ## Support Devices
+
 `flutter device`
 
 `flutter emulator`
@@ -24,7 +49,6 @@ samples, guidance on mobile development, and a full API reference.
 `flutter emulator -l [device]`
 
 [device] is the first column of the output from `flutter emulator`
-*You wont*
 
 ## Run
 `flutter run -d [device]`
